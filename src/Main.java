@@ -3,6 +3,7 @@ import Ejercicio2.Estudiante;
 import Ejercicio3.Persona;
 import Ejercicio4.Cuenta;
 import Ejercicio5.Registro;
+import Ejercicio6.Estudiante2;
 
 import java.util.Scanner;
 
@@ -12,8 +13,8 @@ public class Main {
         //ejercicio2();
         //ejercicio3();
         //ejercicio4();
-        ejercicio5();
-
+        //ejercicio5();
+        ejercicio6();
     }
     //Ejercicio1
     public static void ejercicio1(){
@@ -66,5 +67,18 @@ public class Main {
 
         //Visualizar el registro
         System.out.println("Registro: "+re.getCodigo());
+    }
+    //Ejercicio6
+    public static  void ejercicio6(){
+        //Instanciar el objeto
+        Estudiante2 est2=new Estudiante2();
+
+        //Modificar atributo
+        est2.setNombre("Kevin Simbaña");
+        est2.setCarrera("Desarrollo en software");
+
+        //Obtener atributos
+        System.out.println("Nombre: "+est2.getNombre());
+        System.out.println("Carrera: "+est2.getCarrera());
     }
 }
