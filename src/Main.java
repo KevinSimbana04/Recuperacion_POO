@@ -1,11 +1,13 @@
-import Practica_1.Producto;
-import Practica_2.Estudiante;
+import Ejercicio1.Producto;
+import Ejercicio2.Estudiante;
+import Ejercicio3.Persona;
 
 
 public class Main {
     public static void main(String[] args) {
         //ejercicio1();
-        ejercicio2();
+        //ejercicio2();
+        ejercicio3();
 
 
     }
@@ -27,5 +29,15 @@ public class Main {
         es.setMatricula("2025A001");
         System.out.println("La matricula fue registrado correctamente");
     }
+    //Ejercicio3
+    public static void ejercicio3(){
+        //instanciar el objeto
+        Persona per=new Persona();
 
+        //Asignar una edad
+        per.setEdad(30);
+
+        //visualizar el valor
+        System.out.println("Edad: "+per.getEdad());
+    }
 }

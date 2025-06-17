@@ -1,4 +1,4 @@
-package Practica_2;
+package Ejercicio2;
 
 public class Estudiante {
     //Atributo de la clase
