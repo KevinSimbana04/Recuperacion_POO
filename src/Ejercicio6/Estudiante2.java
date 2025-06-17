@@ -10,7 +10,7 @@ public class Estudiante2 {
     public String getNombre() {
         return nombre;
     }
-
+    //carrera
     public String getCarrera() {
         return carrera;
     }
