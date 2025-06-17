@@ -4,6 +4,7 @@ import Ejercicio3.Persona;
 import Ejercicio4.Cuenta;
 import Ejercicio5.Registro;
 import Ejercicio6.Estudiante2;
+import Ejercicio7.Producto2;
 
 import java.util.Scanner;
 
@@ -14,7 +15,8 @@ public class Main {
         //ejercicio3();
         //ejercicio4();
         //ejercicio5();
-        ejercicio6();
+        //ejercicio6();
+        ejercicio7();
     }
     //Ejercicio1
     public static void ejercicio1(){
@@ -80,5 +82,20 @@ public class Main {
         //Obtener atributos
         System.out.println("Nombre: "+est2.getNombre());
         System.out.println("Carrera: "+est2.getCarrera());
+    }
+    //Ejercicio7
+    public static void ejercicio7(){
+        //Instanciar el objeto
+        Producto2 pro2=new Producto2();
+
+        //Modificar datos
+        pro2.setNombre("Lapiz");
+        pro2.setPrecio(1.50);
+
+        //Visualizar atributos
+        System.out.println("--------------Producto2---------");
+        System.out.println("Nombre: "+pro2.getNombre());
+        System.out.println("Precio: "+pro2.getPrecio());
+
     }
 }
