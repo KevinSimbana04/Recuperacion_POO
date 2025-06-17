@@ -1,14 +1,16 @@
 import Ejercicio1.Producto;
 import Ejercicio2.Estudiante;
 import Ejercicio3.Persona;
+import Ejercicio4.Cuenta;
 
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         //ejercicio1();
         //ejercicio2();
-        ejercicio3();
-
+        //ejercicio3();
+        ejercicio4();
 
     }
     //Ejercicio1
@@ -39,5 +41,20 @@ public class Main {
 
         //visualizar el valor
         System.out.println("Edad: "+per.getEdad());
+    }
+    //Ejercicio4
+    public static void ejercicio4(){
+        Scanner sc=new Scanner(System.in);
+        //Registrar contraseña
+        System.out.println("---------Cuenta---------");
+        System.out.println("Ingresa la contraseña: ");
+        String password=sc.nextLine();
+
+        //Instanciamos la clase
+        Cuenta cu=new Cuenta();
+
+        //Modique el atributo
+        cu.setPassword(password);
+        System.out.println("Contraseña ingresada correctamente");
     }
 }
