@@ -2,6 +2,7 @@ import Ejercicio1.Producto;
 import Ejercicio2.Estudiante;
 import Ejercicio3.Persona;
 import Ejercicio4.Cuenta;
+import Ejercicio5.Registro;
 
 import java.util.Scanner;
 
@@ -10,7 +11,8 @@ public class Main {
         //ejercicio1();
         //ejercicio2();
         //ejercicio3();
-        ejercicio4();
+        //ejercicio4();
+        ejercicio5();
 
     }
     //Ejercicio1
@@ -56,5 +58,13 @@ public class Main {
         //Modique el atributo
         cu.setPassword(password);
         System.out.println("Contraseña ingresada correctamente");
+    }
+    //Ejercicio5
+    public static void ejercicio5(){
+        //instanciar el objeto
+        Registro re=new Registro();
+
+        //Visualizar el registro
+        System.out.println("Registro: "+re.getCodigo());
     }
 }
